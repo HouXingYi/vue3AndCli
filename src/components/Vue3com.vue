@@ -10,7 +10,10 @@
 </template>
 
 <script>
-import { onMounted, ref } from '@vue/runtime-core'
+import {
+  onMounted
+  // ref
+} from '@vue/runtime-core'
 import useMousePostion from './useMousePostion.js'
 export default {
   name: 'testcom',
