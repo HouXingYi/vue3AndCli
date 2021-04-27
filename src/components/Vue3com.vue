@@ -17,7 +17,7 @@ export default {
   props: {},
   data () {
     return {
-      // abc: '2222'
+      abc: '2222'
     }
   },
   mounted () {
@@ -34,7 +34,7 @@ export default {
       })
     }, 5000)
 
-    const abc = ref('2222')
+    // const abc = ref('2222')
 
     onMounted(() => {
       console.log('1111')
@@ -44,7 +44,7 @@ export default {
       testcom: 456,
       x,
       y,
-      abc,
+      // abc,
       a,
       b
     }
