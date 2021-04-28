@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home" :style="{marginTop: '30px'}">
     <el-button type="primary">el-button</el-button>
 
     <el-input v-model="input" placeholder="请输入内容" :style="{width: '500px', marginLeft: '20px'}" clearable></el-input>
