@@ -8,6 +8,7 @@ import {
   watch
 } from '@vue/runtime-core'
 function useMousePostion (xoffset, yoffset) {
+  // console.log('this222', this)
   const x = ref(0)
   const y = ref(0)
 
@@ -30,7 +31,7 @@ function useMousePostion (xoffset, yoffset) {
   })
 
   watch(x, (newValue, oldValue) => {
-    console.log('watchEffect ', newValue, oldValue)
+    // console.log('watchEffect ', newValue, oldValue)
   })
 
   return {

@@ -1,6 +1,7 @@
 <template>
   <div class="testcom">
-    <button @click="reset" :style="{ margin: '20px' }">reset按钮</button> <br>
+    <el-button @click="reset" type="primary" :style="{ margin: '20px' }">reset按钮</el-button> <br>
+    <el-button @click="changeAbc" type="primary" :style="{ margin: '20px' }">changeAbc</el-button> <br>
     {{ testcom }} <br />
     {{ x }} <br />
     {{ y }} <br>
@@ -29,7 +30,15 @@ export default {
   mounted () {
     console.log('2222')
   },
+  methods: {
+    changeAbc () {
+      this.abc = '333'
+      console.log('this.a', this.a)
+      this.a = 123456789
+    }
+  },
   setup () {
+    console.log('this', this)
     const {
       x, y,
       update,
@@ -54,7 +63,7 @@ export default {
           pageX: 666,
           pageY: 999
         })
-      }, 1000)
+      }, 0)
     }
 
     return {
